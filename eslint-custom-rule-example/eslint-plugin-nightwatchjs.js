@@ -5,40 +5,36 @@
  */
 
 // Importing custom ESLint rules
-const pauseRule = require("./rules/pause-rule");
-const waitForElementNotVisibleRule = require("./rules/waitForElementNotVisible-rule");
-const waitForElementPresentRule = require("./rules/waitForElementPresent-rule");
-const waitForElementVisibleRule = require("./rules/waitForElementVisible-rule");
+
+const pausrule = require("./rules/pause-rule");
+const waitForElementNotVisibleRule =require ("./rules/waitForElementNotVisible-rule");
+const waitForElementPresent =require ("./rules/waitForElementPresent-rule");
+const waitForElemenVisible =require("./rules/waitForElemenVisible-rule")
 
 /**
  * Custom ESLint Plugin for Nightwatch.js Rules
- * @type {object}
  */
 const plugin = {
   rules: {
     /**
      * Rule for the 'pause' method.
-     * @see {@link ./rules/pause-rule.js}
      */
-    "pause-rule": pauseRule,
+    "pause-rule":pausrule,
 
     /**
      * Rule for 'waitForElementNotVisible' method.
-     * @see {@link ./rules/waitForElementNotVisible-rule.js}
      */
-    "waitForElementNotVisible-rule": waitForElementNotVisibleRule,
+    "waitForElementNotVisible-rule":waitForElementNotVisibleRule,
 
     /**
      * Rule for 'waitForElementPresent' method.
-     * @see {@link ./rules/waitForElementPresent-rule.js}
      */
-    "waitForElementPresent-rule": waitForElementPresentRule,
+    "waitForElementPresent-rule":waitForElementPresent,
 
     /**
      * Rule for 'waitForElementVisible' method.
-     * @see {@link ./rules/waitForElementVisible-rule.js}
      */
-    "waitForElementVisible-rule": waitForElementVisibleRule,
+    "waitForElemenVisible-rule":waitForElemenVisible
   },
 };
 
