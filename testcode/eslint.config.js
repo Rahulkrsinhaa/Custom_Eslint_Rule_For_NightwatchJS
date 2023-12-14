@@ -30,6 +30,7 @@ module.exports = [
             "nightwatchCustomRules/waitForElementNotVisible-rule": "warn",
             "nightwatchCustomRules/waitForElementPresent-rule": "warn",
             "nightwatchCustomRules/waitForElemenVisible-rule": "warn",
+            "nightwatchCustomRules/waitForElementNotPresent-rule":"warn"
         },
     },
 ];

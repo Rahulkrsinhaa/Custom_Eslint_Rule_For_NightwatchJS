@@ -9,7 +9,8 @@
 const pausrule = require("./rules/pause-rule");
 const waitForElementNotVisibleRule =require ("./rules/waitForElementNotVisible-rule");
 const waitForElementPresent =require ("./rules/waitForElementPresent-rule");
-const waitForElemenVisible =require("./rules/waitForElemenVisible-rule")
+const waitForElemenVisible =require("./rules/waitForElemenVisible-rule");
+const waitForElementNotPresent =require('./rules/waitForElementNotPresent-rule')
 
 /**
  * Custom ESLint Plugin for Nightwatch.js Rules
@@ -34,7 +35,13 @@ const plugin = {
     /**
      * Rule for 'waitForElementVisible' method.
      */
-    "waitForElemenVisible-rule":waitForElemenVisible
+    "waitForElemenVisible-rule":waitForElemenVisible,
+
+    /**
+     * Rule for 'waitForElementNotPresent' method.
+     */
+
+    "waitForElementNotPresent-rule":waitForElementNotPresent
   },
 };
 
