@@ -1,0 +1,13 @@
+{
+  "name": "eslint-custom-rule-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.55.0"
+  }
+}
